@@ -3,14 +3,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: scroll;
   @media screen and (min-width: 759px) {
     gap: 5%;
   }
 }
 
 .image {
-  height: 150px;
-  width: 250px;
+  height: 100px;
+  width: 150px;
   max-height: auto;
   max-width: 90%;
   padding: 12px;

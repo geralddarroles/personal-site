@@ -34,11 +34,19 @@
 .app_preview__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 50%;
-  height: 75%;
-  gap: 1rem;
+  height: 100%;
+  gap: 0.5rem;
   text-align: left;
+  overflow: scroll;
+  min-height: 600px;
+  padding-bottom: 200px;
+  @media screen and (min-width: 769px) {
+    height: 75%;
+    min-height: "fit-content";
+  }
 }
 
 .app_preview__header {

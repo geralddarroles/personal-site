@@ -83,7 +83,10 @@ const DeveloperExperience = () => {
   const renderContent = () => {
     return (
       <>
-        <FullWidthScrollAnimator animation="bottomToTop">
+        <FullWidthScrollAnimator
+          animation="bottomToTop"
+          style={{ minHeight: "fit-content" }}
+        >
           {renderImage()}
         </FullWidthScrollAnimator>
         <FullWidthScrollAnimator
@@ -99,7 +102,7 @@ const DeveloperExperience = () => {
   const renderContentMobile = () => {
     return (
       <FullWidthScrollAnimator
-        animation="fadeIn"
+        animation="moveInAndOut"
         style={styles.div__col__container}
       >
         <div className={styles.div__content__row}>
@@ -157,5 +160,6 @@ const data = [
   "Built universal middleware, hooks, global Redux actions, and reusable components to increase app modularity and ease of development for other developers",
   "Leveraged Generative AI / GitHub Copilot to expedite production as a research, debugging, code review, and contextual documentation tool",
   "Performed E2E testing using Detox for React Native",
-  "Optimized React / React Native applications using virtualization, memoization, and other techniques to minimize rendering or data fetching"
+  "Optimized React / React Native applications using virtualization, memoization, and other techniques to minimize rendering or data fetching",
+  ""
 ];

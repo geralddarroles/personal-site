@@ -31,6 +31,7 @@ import {
 } from "../../src/assets/data/data";
 import { useInView } from "react-intersection-observer";
 import DeveloperExperience from "../components/DeveloperExperience.jsx";
+import DeveloperExperienceImage from "../components/DeveloperExperienceImage.jsx";
 
 export const validateEmail = (email) => {
   const re =
@@ -189,10 +190,13 @@ const PersonalPage = () => {
           </FullWidthScrollAnimator>
         </ScrollPage>
         <ScrollPage></ScrollPage>
+        {/* <div>
+          <DeveloperExperienceImage />
+        </div> */}
         <div id="#work">
           <DeveloperExperience />
         </div>
-        {!isMobile && <ScrollPage></ScrollPage>}
+        <ScrollPage></ScrollPage>
       </ScrollContainer>
 
       <div id={"#tech-stacks"} className={styles.portfolio__tech__stack}>
