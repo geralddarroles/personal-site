@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useLayoutEffect } from "react";
 import useFadeAnimation from "./useFadeAnimation";
 import Image from "./universalComponents/Image";
+import styles from "./PersonalWelcome.module.css";
 
 const AnimatedHistory = ({ title, image, details, id }) => {
   const [opacity, fadeIn, reset] = useFadeAnimation();
@@ -44,10 +45,25 @@ const AnimatedHistory = ({ title, image, details, id }) => {
         {details.map((item, index) => {
           const { organization, date, description } = item;
           return (
-            <div className="flex flex-col items-start gap-5 mb-10" key={index}>
-              <h4 className="font-bold">{organization}</h4>
-              <h6 className="">{date}</h6>
-              <h6 className="">{description}</h6>
+            <div className="flex flex-col items-start gap-4" key={index}>
+              <div className="flex flex-col items-start gap-2">
+                <h4 className="font-bold">{organization}</h4>
+                <h6 className="">{date}</h6>
+                <h6 className="">{description}</h6>
+              </div>
+              <div className={styles.hero__contact}>
+                <h4>Reach out now!</h4>
+                <h4 className={styles.hero__link} type="tel">
+                  416-779-9519{" "}
+                </h4>
+                <h4
+                  className={styles.hero__link}
+                  href="mailto:gerald.darroles@gmail.com"
+                  type="email"
+                >
+                  gerald.darroles@gmail.com{" "}
+                </h4>
+              </div>
             </div>
           );
         })}

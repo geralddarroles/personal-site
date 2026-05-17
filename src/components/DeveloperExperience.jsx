@@ -23,7 +23,7 @@ const DeveloperExperience = () => {
             </h2>
           )}
           <h3 style={{ margin: "0px" }} className="semibold">
-            Goodself - The Health Social Media
+            Goodself - The Healthy Social Media
           </h3>
           <h3 style={{ margin: "0px" }} className="semibold">
             Full Stack Developer{" "}

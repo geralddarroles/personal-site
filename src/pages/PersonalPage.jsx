@@ -233,29 +233,29 @@ const PersonalPage = () => {
         />
         <ScrollPage></ScrollPage>
         <AppPreview
-          title="EPIC DANCE (iOS App)"
-          dateBuilt="Released December 2022"
-          image="epicdance"
-          description="Built an interactive dance game using Google ML Kit pose detection Built a gesture-based control system by mapping real-time hand movements captured with the front-facing camera to interact with sprites generated on screen"
-          developerDesc="A computer vision based game that processes camera data in real time using image buffer, optimized to manage battery life and cpu / gpu performance during pose detection, body tracking, and graphics-heavy gameplay. Developed the app using MVC architecture, singleton patterns, and delegates/protocols, with an adaptive UI built using SwiftUI, UIKit, and SpriteKit.  Integrated Stripe payments APIs, SendGrid, social authentication, and Firebase Firestore for storage. Designed gamification features (badges, achievements) to improve user engagement"
-          link="https://apps.apple.com/app/epicdance/id1664587527"
-        />
-        <ScrollPage></ScrollPage>
-        <AppPreview
           title="POCKET WALLET (iOS / Android)"
           dateBuilt="Release August 2021"
           image="pocketwallet"
           description="Budgeting app with 2,800+ authenticated users, allowing friends and families to track expenses in real time."
-          developerDesc="A client only React Native app with Firebase for data storage. The app features social authentication, custom animation, redux, subscription using Qonversion API and many more. Data storage uses strict Firestore Security rules to ensure the safety of the user's data."
+          developerDesc="A client only React Native app with Firebase for data storage. The app features social authentication, custom animation, redux, subscriptions using Qonversion API and many more. Data storage uses strict Firestore Security rules to ensure the safety of the user's data."
           link="https://apps.apple.com/ca/app/pocketwallet-budget-app/id1564610616"
+        />
+        <ScrollPage></ScrollPage>
+        <AppPreview
+          title="EPIC DANCE (iOS App)"
+          dateBuilt="Released December 2022"
+          image="epicdance"
+          description="Beat saber, Dance Dance Revolution but with your hands."
+          developerDesc="A computer vision based game that processes camera data in real time using image buffer, optimized to manage battery life and cpu / gpu performance during pose detection, body tracking, and graphics-heavy gameplay. Developed the app using MVC architecture, singleton patterns, and delegates/protocols, with an adaptive UI built using SwiftUI, UIKit, and SpriteKit.  Integrated Stripe payments APIs, SendGrid, social authentication, and Firebase Firestore for storage. Designed gamification features (badges, achievements) to improve user engagement"
+          link="https://apps.apple.com/app/epicdance/id1664587527"
         />
         <ScrollPage></ScrollPage>
         <AppPreview
           title="YSM SNACK COUNTER (iOS / Android)"
           dateBuilt="Release on April 2020"
           image="snack-counter"
-          description="Developed an app to track meal distribution during COVID-19 as demand surged by 300%. Data was used to help secure funding for meals from various donors, including a restaurant chain and the government"
-          developerDesc=" React Native app"
+          description="Tracks meal distribution to families in need, led to more donations and transparency to donors"
+          developerDesc=" A simple intuitive React Native app with use of best practice ui principles and local storage for storing data."
           link=""
         />
         <ScrollPage>
@@ -277,20 +277,6 @@ const PersonalPage = () => {
           </FullWidthScrollAnimator>
         </ScrollPage>
       </ScrollContainer>
-
-      <div className={styles.hero__contact}>
-        <h4>Reach out now!</h4>
-        <h4 className={styles.hero__link} type="tel">
-          416-779-9519{" "}
-        </h4>
-        <h4
-          className={styles.hero__link}
-          href="mailto:gerald.darroles@gmail.com"
-          type="email"
-        >
-          gerald.darroles@gmail.com{" "}
-        </h4>
-      </div>
 
       {/* <a className='p-5 mt-10 no-underline border-2 rounded-lg cursor-pointer lg:mb-10 mb-36' href="https://drive.google.com/file/d/1tKZO7ML_tSTj1biXlVGubSAAR4eWyFDu/view?usp=share_link">
                 <div className="flex flex-row items-center justify-center w-full gap-5 text-gray-800 cursor-pointer ">
