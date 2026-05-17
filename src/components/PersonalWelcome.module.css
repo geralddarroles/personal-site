@@ -1,0 +1,104 @@
+/* ========================================
+   Hero Section
+======================================== */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  max-height: 100vh;
+  height: 100%;
+  padding-bottom: 24px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-height: 80%;
+  width: 80%;
+  max-width: 100;
+  padding: 5%;
+  gap: 0px;
+  color: #4b5563;
+}
+
+.hero__name {
+  width: 75%;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.hero__title {
+  width: 75%;
+}
+
+.hero__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0px;
+}
+
+.hero__link {
+  color: #4b5563;
+  text-decoration: none;
+  margin: 0px;
+}
+
+.hero__status {
+  margin-top: 10%;
+  font-weight: 700;
+  color: #4b5563;
+}
+
+.div__bottom__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero__subtitle {
+  padding: 0 1.25rem;
+}
+
+.hero__icon {
+  font-size: 6rem;
+  color: #9333ea;
+  opacity: 0.5;
+  animation: bounce 1.5s infinite;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (min-width: 1024px) {
+  .hero {
+    gap: 9rem;
+  }
+}
+
+/* ========================================
+   Bounce Animation
+======================================== */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}

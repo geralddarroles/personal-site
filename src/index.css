@@ -1,13 +1,513 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* text styles based on this 
+https://mobiadmin-my.sharepoint.com/:x:/g/personal/acarroll_goodself_com/EbYdltGO5g9Ml7fDFABV3_cBZ9ehByhkmob3PITfbI2QJg?e=ad7Ttp&wdOrigin=TEAMS-MAGLEV.p2p_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1729605066824&web=1
+*/
+
+h1 {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+h1.semibold {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 21px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 19px;
+}
+
+h3.roboto {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+h4.roboto {
+  line-height: 24px;
+}
+
+h4.roboto.medium {
+  line-height: 28px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+h5.space-md {
+  line-height: 20px;
+}
+
+h5.medium {
+  line-height: 12px;
+}
+
+h5.semibold {
+  line-height: 22px;
+}
+
+h5.inter.medium {
+  line-height: 12px;
+}
+
+h5.inter.subpages {
+  line-height: 14px;
+}
+
+h5.inter.bold {
+  line-height: 14px;
+}
+
+h5.display.bold {
+  line-height: 16px;
+}
+
+h5.space.md {
+  line-height: 20px;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+h6.light {
+  line-height: 16px;
+}
+
+h6.medium {
+  line-height: 20px; /*   sheet is 16px and lead to text getting cutoff  so change  the line height to 20px */
+}
+
+h5.roboto.medium {
+  line-height: 18px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 11px;
+}
+
+p.display {
+  font-size: 10px;
+}
+
+p.display.italic {
+  line-height: 12px;
+  font-style: italic;
+}
+
+.custom-a {
+  font-size: 13.67px;
+}
+
+.dialog {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.dialog.bold {
+  line-height: 22px;
+}
+
+.caption {
+  font-size: 14px;
+}
+
+.subtext {
+  font-size: 7px;
+}
+
+.subtext.semibold {
+  line-height: 20px;
+}
+
+.micro {
+  font-size: 8px;
+}
+
+.tiny {
+  font-size: 9px;
+}
+
+.profile {
+  font-size: 9.9px;
+}
+
+.small {
+  font-size: 10px;
+}
+
+.body {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.custom-b {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.custom-c {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.custom-d {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.custom-e {
+  font-weight: 600;
+  font-family: var(--font-3);
+  font-size: 36.4px;
+}
+
+.custom-f {
+  font-family: var(--font-4);
+  font-weight: 600;
+  font-size: 42px;
+}
+
+/*Utility classes */
+.noto-sans {
+  font-family: var(--font-1);
+}
+
+.roboto {
+  font-family: var(--font-2);
+}
+
+.inter {
+  font-family: var(--font-3);
+}
+
+.display {
+  font-family: var(--font-4);
+}
+
+.italic {
+  font-style: italic;
+}
+
+.thin {
+  font-weight: 100;
+}
+
+.extralight {
+  font-weight: 200;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.extrabold {
+  font-weight: 800;
+}
+
+.black {
+  font-weight: 900;
+}
+
+textarea {
+  font-weight: 400;
+  font-family: "Arial";
+}
+
+button {
+  font-family: Arial;
+  color: black;
+}
+
+.title-large {
+  font-size: 28px;
+}
+
+.title-community {
+  font-size: 16x;
+}
+
+/* Increase size by one pixel each when viewing on tablet or desktop*/
+@media (min-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 17px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  .dialog {
+    font-size: 18px;
+  }
+
+  .caption {
+    font-size: 16px;
+  }
+
+  .body {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .custom-e {
+    font-size: 38px;
+  }
+
+  .custom-d {
+    font-size: 30px;
+  }
+
+  .custom-b {
+    font-size: 22px;
+  }
+
+  .small {
+    font-size: 12px;
+  }
+
+  .profile {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .tiny {
+    font-size: 12px;
+  }
+
+  .micro {
+    font-size: 12px;
+  }
+
+  .subtext {
+    font-size: 12px;
+  }
+
+  .title-large {
+    font-size: 28px;
+  }
+
+  .title-community {
+    font-size: 32px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select {
+    font-size: 16px;
+  }
+  textarea,
+  input {
+    outline: none;
+    font-size: 16px !important;
+  }
+}
+
+/* ========================================
+Marketing font names - 
+========================================*/
+
+.w2 {
+  font-size: 34px;
+  line-height: normal !important;
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    font-size: 45px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 90px;
+  }
+}
+
+.w3 {
+  font-size: 22px;
+  line-height: normal !important;
+
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 40px;
+  }
+}
+
+.w4 {
+  font-size: 20px;
+  line-height: normal !important;
+
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 35px;
+  }
+}
+
+.w5 {
+  font-size: 18px;
+  line-height: normal !important;
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 27px;
+  }
+}
+
+.w6 {
+  font-size: 16px;
+  line-height: normal !important;
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 24px;
+  }
+}
+
+.wp {
+  font-size: 14px;
+  line-height: normal !important;
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1101px) {
+    font-size: 22px;
+  }
+}
+
+/** Extra utility classes for marketing pages **/
+
+.main-heading {
+  font-size: 28px;
+  @media screen and (min-width: 769px) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: 1100px) {
+    font-size: 64px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  @media screen and (min-width: 769px) {
+    font-size: 34px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    font-size: 52px;
+  }
+}
+
+.heading-1-marketing {
+  font-size: 22px;
+  @media screen and (min-width: 769px) {
+    font-size: 28px;
+  }
+  @media screen and (min-width: 1100px) {
+    font-size: 40px;
+  }
+}
+
+.heading-2-marketing {
+  font-size: 20px;
+  @media screen and (min-width: 769px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1100px) {
+    font-size: 32px;
+  }
+}
+
+.heading-3-marketing {
+  font-size: 18px;
+  @media screen and (min-width: 769px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1100px) {
+    font-size: 24px;
+  }
+}
+
+.body-1 {
+  font-size: 16px;
+  @media screen and (min-width: 769px) {
+    font-size: 18px;
+  }
+}
+
+.body-2 {
+  font-size: 14px;
+  @media screen and (min-width: 769px) {
+    font-size: 16px;
+  }
 }

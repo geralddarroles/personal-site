@@ -1,0 +1,30 @@
+.icon__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem; /* equivalent to Tailwind's gap-5 */
+}
+
+.div__icon__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem; /* Tailwind gap-20 */
+  margin-bottom: 0; /* mb-0 */
+  margin-top: 2.25rem; /* mt-9 */
+  width: auto;
+  @media (min-width: 1024px) {
+    width: 75%; /* lg:w-3/4 */
+  }
+}
+
+.h3__icon__heading {
+  padding-left: 2.5rem; /* px-10 */
+  padding-right: 2.5rem; /* px-10 */
+  font-weight: 700; /* font-bold */
+  color: #5b21b6; /* text-purple-800 (approx) */
+  @media (min-width: 1024px) {
+    align-self: flex-start; /* lg:self-start */
+  }
+}

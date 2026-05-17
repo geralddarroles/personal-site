@@ -1,0 +1,152 @@
+/* ========================================
+   Portfolio Layout
+======================================== */
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+  gap: 2.5rem;
+}
+
+.portfolio__scroll__container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: 4rem 0;
+}
+
+.portfolio__section__label {
+  position: fixed;
+  left: 2.5rem;
+  z-index: 10;
+  font-weight: 700;
+  color: #374151;
+}
+
+.scroll__animator__splash {
+  width: 100%;
+}
+
+.portfolio__tech__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 11rem;
+}
+
+/* ========================================
+   Contact Section
+======================================== */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 5rem;
+  border: 2px solid #4b5563;
+  border-radius: 0.5rem;
+}
+
+.contact--success {
+  border: none;
+}
+
+.contact__title {
+  margin-top: 1.25rem;
+  color: #6b21a8;
+  font-weight: 700;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem 0;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  color: #1f2937;
+}
+
+.contact__text {
+  color: #1f2937;
+}
+
+.contact__link {
+  color: #1f2937;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.contact__textarea {
+  width: 100%;
+  height: 12rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  text-align: center;
+  outline-color: #6b21a8;
+  overflow-y: scroll;
+  resize: none;
+}
+
+.contact__success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.contact__success-message {
+  padding: 2.5rem;
+  color: #4b5563;
+}
+
+/* ========================================
+   Responsive
+======================================== */
+
+@media (min-width: 1024px) {
+  .contact {
+    max-width: 600px;
+    margin-bottom: 24rem;
+  }
+
+  .contact__container {
+    flex-direction: row-reverse;
+    padding: 2.5rem;
+  }
+
+  .contact__info h6,
+  .contact__info p {
+    text-align: right;
+  }
+
+  .contact__form {
+    width: 100%;
+  }
+
+  .portfolio__tech-stack {
+    margin-bottom: 14rem;
+  }
+}
