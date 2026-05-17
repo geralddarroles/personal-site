@@ -169,9 +169,11 @@ const returnImageIcon = (title) => {
         imageUrl = require("../../assets/images/ImageIcons/figma.jpeg");
       }
       break;
-    case "SWIFT": {
-      imageUrl = require("../../assets/images/ImageIcons/swift.jpeg");
-    }
+    case "SWIFT":
+      {
+        imageUrl = require("../../assets/images/ImageIcons/swift.jpeg");
+      }
+      break;
     case "C++":
       {
         imageUrl = require("../../assets/images/ImageIcons/cpp.png");

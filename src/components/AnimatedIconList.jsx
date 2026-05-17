@@ -7,7 +7,7 @@ const AnimatedIconList = ({ heading, id, iconList, showHeading }) => {
   const [visible, setVisible] = useState(false);
 
   const { ref, inView } = useInView({
-    threshold: 0.6
+    threshold: 0.9
   });
 
   useEffect(() => {
